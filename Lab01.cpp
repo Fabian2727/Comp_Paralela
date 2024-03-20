@@ -26,7 +26,7 @@ int main() {
 	
 	std::chrono::duration<float, std::milli> duration = end - start;
 	
-	std::cout << duration.count() << "s " << std::endl;
+	std::cout << duration.count() << "ms " << std::endl;
 	
 	for (int i = 0; i < max; ++i) {
 		delete[] A[i];
@@ -57,7 +57,7 @@ int main() {
 	
 	std::chrono::duration<float, std::milli> duration2 = end2 - start2;
 	
-	std::cout << duration2.count() << "s " << std::endl;
+	std::cout << duration2.count() << "ms " << std::endl;
 
 	for (int i = 0; i < max2; ++i) {
 		delete[] B[i];
